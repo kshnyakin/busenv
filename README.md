@@ -1,7 +1,7 @@
 # README
 
 ## About
-Repository - test task fir Business Environment
+Repository - test task for Business Environment
 
 ## Stack
 * Ruby version = 2.7.1
