@@ -1,8 +1,20 @@
 # README
 
 ## About
-Repository - test app on Ruby On Rails Tutorial book (by Michael Hartl)
+Repository - test task fir Business Environment
 
 ## Stack
 * Ruby version = 2.7.1
 * Rails version = 6.0.0
+
+## Targets
+* Реализовать JSON API по учету доходов и расходов пользователя с учетом приведенных ниже требований к реализации:
+* Конкурентные запросы по изменению баланса пользователя
+* Выписка по всем операциям пользователя с отбором по периоду (Наименование дохода (расхода), сумма, дата), состояние баланса на начало и конец периода.
+
+Рекомендуемые технологии:
+* Rails 5-6
+* postgresql
+* ruby последней стабильной версии
+* rspec
+
