@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Актуальный баланс:</strong>
+  <%= @user.balance %>
+</p>
+
+<h2>Список операций по счету</h2>
+<hr>
+<table>
+  <tr>
+    <th>Имя операции</th>
+    <th>Значение</th>
+    <th>Тип операции</th>
+    <th>Дата операции</th>
+  </tr>
+<% @user.operations.each do |operation| %>
+  <tr>
+    <td><%= operation.name %></td>
+    <td><%= operation.value %></td>
+    <td><%= operation.operation_type %></td>
+    <td><%= operation.created_at %></td>
+  </tr>
+<% end %>
+</table>
+<hr>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

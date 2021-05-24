@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  root to: 'application#hello'
-  get '/start', to: 'start#index'
+  resources :balances
+  resources :operations
+  root to: 'start#index'
+  resources :users
   
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

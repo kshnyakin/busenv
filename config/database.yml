@@ -5,8 +5,8 @@ default: &default
 
 development:
   <<: *default
-  database: devpull_rails6_tutorial_dev
+  database: busenv_dev
 
 test:
   <<: *default
-  database: devpull_rails6_tutorial_test
+  database: busenv_test
